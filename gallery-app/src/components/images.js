@@ -21,9 +21,9 @@ export default function Images(){
     return(
         <main>
             <div className='image-div'>
-                <button onClick={getImageData} className='img-btn'></button>
-                <button onClick={getImageData} className='img-btn'></button>
+                <button onClick={getImageData} className='img-btn'>Next</button>
             </div>
+            <img src={imgData} className='img'></img>
         </main>
     )
 }
