@@ -23,5 +23,6 @@ code {
 }
 
 .image-div{
-  
+  display: flex;
+  position: absolute;
 }
