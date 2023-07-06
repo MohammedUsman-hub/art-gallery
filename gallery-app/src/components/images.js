@@ -3,8 +3,8 @@ import '../index.css';
 
 export default function Images(){
     render(
-        <div>
-            
+        <div className='image-div'>
+
         </div>
     )
 }
