@@ -12,7 +12,7 @@ function imageClick(){
 export default function Images(){
     const [imgData, setimgData] = React.useState("")
 
-    function setimgData(){
+    function getImageData(){
     const imageArray = imageData.data.gallery
     const randomNumber = Math.floor(Math.random() * imageArray.length)
     setimgData(imageArray[randomNumber].url)
@@ -21,7 +21,8 @@ export default function Images(){
     return(
         <main>
             <div className='image-div'>
-
+                <button onClick={getImageData} className='img-btn'></button>
+                <button onClick={getImageData} className='img-btn'></button>
             </div>
         </main>
     )
