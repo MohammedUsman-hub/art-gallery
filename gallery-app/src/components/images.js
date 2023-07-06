@@ -10,9 +10,19 @@ function imageClick(){
 }
 
 export default function Images(){
-    return(
-        <div className='image-div'>
+    const [imgData, setimgData] = React.useState("")
 
-        </div>
+    function setimgData(){
+    const imageArray = imageData.data.gallery
+    const randomNumber = Math.floor(Math.random() * imageArray.length)
+    setimgData(imageArray[randomNumber].url)
+}
+    
+    return(
+        <main>
+            <div className='image-div'>
+
+            </div>
+        </main>
     )
 }
