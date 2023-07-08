@@ -25,4 +25,27 @@ code {
 .image-div{
   display: flex;
   position: absolute;
+  width: 100%;
+}
+
+.img{
+  width: 50%;
+  position: absolute;
+  left: 45%;
+  top: 30%;
+}
+
+.img-btn{
+  width: 8%;
+  height: 2pc;
+  position: absolute;
+  border-radius: 20px;
+  background-color: tomato;
+  box-shadow: 2px 2px;
+  top: 45pc;
+  left: 45%;
+}
+.img-btn:hover{
+  cursor: pointer;
+  
 }
