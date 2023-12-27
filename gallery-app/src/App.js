@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
-
 import Images from './components/images.js';
 import Title from './components/title.js';
+import './index.css'
 
-function App() {
+export default function App() {
   return (
     <div>
       <Title/>
@@ -12,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+

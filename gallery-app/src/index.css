@@ -14,12 +14,12 @@ code {
 }
 
 
-.title{
+#title{
   font-size: 50px;
   display: flex;
   position: absolute;
   left: 35%;
-  color:rgb(244, 200, 141);
+  color: black/*rgb(244, 200, 141);*/
 }
 
 .image-div{
