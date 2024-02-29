@@ -3,19 +3,28 @@ import '../index.css';
 
 import imageData from '../imageData.js';
 
-function imageClick(){
+/*function imageClick(){
     const imageArray = imageData.data.gallery
     const randomNumber = Math.floor(Math.random() * imageArray.length)
     const img = imageArray[randomNumber].img
-}
+}*/
 
 export default function ImageGallery(){
-    const [imgData, setImgData] = React.useState("")
+
+    const [image, setImage] = React.useState({
+        randomImage: "./images"
+    })
+
+    const [AllImgData, setAllImgData] = React.useState("")
 
     function getImageData(){
-    const imageArray = imageData.data.gallery
+    const imageArray = AllImgData.data.gallery
     const randomNumber = Math.floor(Math.random() * imageArray.length)
-    setImgData(imageArray[randomNumber].img)
+    const url = imageArray[randomNumber].url
+    setImage(prevImg => ({
+        ...prevImg,
+        randomImage : url
+    }))
 }
     
     return(
@@ -23,7 +32,7 @@ export default function ImageGallery(){
             <div className='image-div'>
                <button onClick={getImageData} className='img-btn'><b>Change Image</b></button>
             </div>
-            <img src={imgData} className='img'></img>
+            <img src={image.randomImage} className='img'></img>
         </main>
     )
 }
