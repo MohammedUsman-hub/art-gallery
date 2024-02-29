@@ -12,18 +12,18 @@ import imageData from '../imageData.js';
 export default function ImageGallery(){
 
     const [image, setImage] = React.useState({
-        randomImage: "./images"
+        randomImage: './public/images'
     })
 
-    const [AllImgData, setAllImgData] = React.useState("")
+    const [AllImgData, setAllImgData] = React.useState(imageData)
 
     function getImageData(){
     const imageArray = AllImgData.data.gallery
     const randomNumber = Math.floor(Math.random() * imageArray.length)
-    const url = imageArray[randomNumber].url
+    const img = imageArray[randomNumber].img
     setImage(prevImg => ({
         ...prevImg,
-        randomImage : url
+        randomImage : img
     }))
 }
     

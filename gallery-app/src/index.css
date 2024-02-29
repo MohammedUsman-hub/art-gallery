@@ -19,7 +19,7 @@ code {
   display: flex;
   position: absolute;
   left: 35%;
-  color: black/*rgb(244, 200, 141);*/
+  color: rgb(158, 102, 222)/*rgb(244, 200, 141);*/
 }
 
 .image-div{
@@ -30,9 +30,10 @@ code {
 
 .img{
   width: 50%;
+  height: 50%;
   position: absolute;
-  left: 45%;
-  top: 30%;
+  left: 40%;
+  top: 20%;
 }
 
 .img-btn{
@@ -43,7 +44,7 @@ code {
   background-color: tomato;
   box-shadow: 2px 2px;
   top: 45pc;
-  left: 45%;
+  left: 20%;
 }
 .img-btn:hover{
   cursor: pointer;
